@@ -14,29 +14,29 @@ class EthernetCommunication : public rclcpp::Node
 public:
     EthernetCommunication() : Node("ethernet_communication")
     {
-        // IP/Port 파라미터
+        // IP/Port parameters
         this->declare_parameter<std::string>("can_server_ip", "192.168.0.223");
         this->declare_parameter<int>("can_server_port", 4001);
 
         server_ip_ = this->get_parameter("can_server_ip").as_string();
         server_port_ = this->get_parameter("can_server_port").as_int();
 
-        // Raw 데이터 Publisher
+        // Raw data publishers
         prox_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("proximity_distance", 10);
         tof_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("tof_distance", 10);
         filtered_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("filtered_distance", 10);
 
-        // 데이터 초기화
+        // Initialize message data
         prox_msgs_.data = {0.0f, 0.0f};
         tof_msgs_.data = {0.0f, 0.0f};
         filtered_msgs_.data = {0.0f, 0.0f};
 
-        // 소켓 연결 시도
+        // Try socket connection
         if (connect_server()) {
             receive_thread_ = std::thread(&EthernetCommunication::receive_loop, this);
         }
 
-        // 100Hz 타이머로 Raw 데이터 발행
+        // Publish raw data at 100 Hz via timer
         using namespace std::chrono_literals;
         timer_ = this->create_wall_timer(10ms, [this]() {
             prox_pub_->publish(prox_msgs_);
@@ -109,7 +109,7 @@ private:
         uint8_t dlc = frame[5];
         if (dlc > 8) return;
 
-        // Big Endian Parsing
+        // Big-endian parsing
         if (can_id == 0x41) {
             // Distance (Payload 0-3 -> Frame 6-9)
             uint32_t dist = (static_cast<uint32_t>(frame[6]) << 24) |
@@ -123,7 +123,7 @@ private:
                             (static_cast<uint32_t>(frame[12]) << 8)  |
                             (static_cast<uint32_t>(frame[13]) << 0);
 
-            prox_msgs_.data[0] = static_cast<float>(dist); // mm
+            prox_msgs_.data[0] = static_cast<float>(dist); // millimeters
             filtered_msgs_.data[0] = static_cast<float>(raw);
 
         } else if (can_id == 0x42) {
@@ -142,3 +142,4 @@ int main(int argc, char** argv)
     rclcpp::shutdown();
     return 0;
 }
+// CAN-to-Ethernet Communication Node
