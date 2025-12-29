@@ -14,35 +14,53 @@ class EthernetCommunication : public rclcpp::Node
 public:
     EthernetCommunication() : Node("ethernet_communication")
     {
-        // IP/Port parameters
+        // Network parameters
         this->declare_parameter<std::string>("can_server_ip", "192.168.0.223");
         this->declare_parameter<int>("can_server_port", 4001);
+        
+        // Topic name parameters
+        this->declare_parameter<std::string>("proximity_topic", "proximity_distance");
+        this->declare_parameter<std::string>("tof_topic", "tof_distance");
+        this->declare_parameter<std::string>("raw_topic", "raw_distance");
+        
+        // Publish rate parameter
+        this->declare_parameter<double>("publish_rate", 100.0);
 
         server_ip_ = this->get_parameter("can_server_ip").as_string();
         server_port_ = this->get_parameter("can_server_port").as_int();
+        
+        std::string proximity_topic = this->get_parameter("proximity_topic").as_string();
+        std::string tof_topic = this->get_parameter("tof_topic").as_string();
+        std::string raw_topic = this->get_parameter("raw_topic").as_string();
+        
+        double publish_rate = this->get_parameter("publish_rate").as_double();
 
         // Raw data publishers
-        prox_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("proximity_distance", 10);
-        tof_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("tof_distance", 10);
-        filtered_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("filtered_distance", 10);
+        prox_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>(proximity_topic, 10);
+        tof_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>(tof_topic, 10);
+        raw_pub_ = this->create_publisher<std_msgs::msg::Float32MultiArray>(raw_topic, 10);
 
         // Initialize message data
         prox_msgs_.data = {0.0f, 0.0f};
         tof_msgs_.data = {0.0f, 0.0f};
-        filtered_msgs_.data = {0.0f, 0.0f};
+        raw_msgs_.data = {0.0f, 0.0f};
 
         // Try socket connection
         if (connect_server()) {
             receive_thread_ = std::thread(&EthernetCommunication::receive_loop, this);
         }
 
-        // Publish raw data at 100 Hz via timer
+        // Publish raw data via timer
         using namespace std::chrono_literals;
-        timer_ = this->create_wall_timer(10ms, [this]() {
+        auto period_ms = std::chrono::milliseconds(static_cast<int>(1000.0 / publish_rate));
+        timer_ = this->create_wall_timer(period_ms, [this]() {
             prox_pub_->publish(prox_msgs_);
-            filtered_pub_->publish(filtered_msgs_);
+            raw_pub_->publish(raw_msgs_);
             tof_pub_->publish(tof_msgs_);
         });
+        
+        RCLCPP_INFO(this->get_logger(), "Publishers initialized: %s, %s, %s at %.1f Hz",
+                    proximity_topic.c_str(), tof_topic.c_str(), raw_topic.c_str(), publish_rate);
     }
 
     ~EthernetCommunication()
@@ -59,9 +77,9 @@ private:
     std::atomic<bool> running_{true};
     std::thread receive_thread_;
 
-    rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr prox_pub_, tof_pub_, filtered_pub_;
+    rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr prox_pub_, tof_pub_, raw_pub_;
     rclcpp::TimerBase::SharedPtr timer_;
-    std_msgs::msg::Float32MultiArray prox_msgs_, tof_msgs_, filtered_msgs_;
+    std_msgs::msg::Float32MultiArray prox_msgs_, tof_msgs_, raw_msgs_;
 
     bool connect_server()
     {
@@ -124,7 +142,7 @@ private:
                             (static_cast<uint32_t>(frame[13]) << 0);
 
             prox_msgs_.data[0] = static_cast<float>(dist); // millimeters
-            filtered_msgs_.data[0] = static_cast<float>(raw);
+            raw_msgs_.data[0] = static_cast<float>(raw);
 
         } else if (can_id == 0x42) {
             // ToF (Payload 2-3 -> Frame 8-9)
