@@ -3,7 +3,7 @@
 ethernet_node:
   ros__parameters:
     # Network Configuration
-    can_server_ip: "192.168.0.223"
+    can_server_ip: "192.168.111.223"
     can_server_port: 4001
     
     # Topic Names - 4 Channels
@@ -23,7 +23,7 @@ ethernet_node:
     raw_topic4: "raw_distance4"
     
     # Publishing Rate (Hz)
-    publish_rate: 100.0
+    publish_rate: 200.0
 
 processing_node:
   ros__parameters:
