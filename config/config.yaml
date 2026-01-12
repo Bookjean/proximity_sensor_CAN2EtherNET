@@ -1,24 +1,35 @@
 # CAN-to-Ethernet Configuration File
 
-ethernet_communication:
+ethernet_node:
   ros__parameters:
     # Network Configuration
     can_server_ip: "192.168.0.223"
     can_server_port: 4001
     
-    # Topic Names
-    proximity_topic: "proximity_distance"
-    tof_topic: "tof_distance"
-    raw_topic: "raw_distance"
+    # Topic Names - 4 Channels
+    proximity_topic1: "proximity_distance1"
+    proximity_topic2: "proximity_distance2"
+    proximity_topic3: "proximity_distance3"
+    proximity_topic4: "proximity_distance4"
+    
+    tof_topic1: "tof_distance1"
+    tof_topic2: "tof_distance2"
+    tof_topic3: "tof_distance3"
+    tof_topic4: "tof_distance4"
+    
+    raw_topic1: "raw_distance1"
+    raw_topic2: "raw_distance2"
+    raw_topic3: "raw_distance3"
+    raw_topic4: "raw_distance4"
     
     # Publishing Rate (Hz)
     publish_rate: 100.0
 
-proximity_sensor_processor:
+processing_node:
   ros__parameters:
     # Topic Names
     input_topic: "proximity_distance"
     output_topic: "proximity_detection"
     
     # Detection Threshold (millimeters)
-    threshold_mm: 150.0
+    threshold_mm: 100.0

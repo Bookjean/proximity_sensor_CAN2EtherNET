@@ -1,0 +1,197 @@
+[0.000000] (-) TimerEvent: {}
+[0.000173] (ecan_driver) JobQueued: {'identifier': 'ecan_driver', 'dependencies': OrderedDict()}
+[0.000237] (ecan_driver) JobStarted: {'identifier': 'ecan_driver'}
+[0.007956] (ecan_driver) JobProgress: {'identifier': 'ecan_driver', 'progress': 'cmake'}
+[0.008638] (ecan_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/hyunchangkang/ros2_ws/src/ecan_driver', '-DCMAKE_INSTALL_PREFIX=/home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver'], 'cwd': '/home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hyunchangkang'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hyunchangkang'), ('OLDPWD', '/home/hyunchangkang/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1421'), ('SYSTEMD_EXEC_PID', '1851'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2659'), ('COLCON_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hyunchangkang'), ('JOURNAL_STREAM', '8:10956'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hyunchangkang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hyunchangkang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nuc10i5fnh:@/tmp/.ICE-unix/1661,unix/nuc10i5fnh:/tmp/.ICE-unix/1661'), ('INVOCATION_ID', '6c790692238d420d899a3f0b83509bc7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:5370b491-fb36-4297-ba35-d135fad85712'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver:/opt/ros/humble')]), 'shell': False}
+[0.097133] (ecan_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099152] (-) TimerEvent: {}
+[0.154391] (ecan_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.162384] (ecan_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199267] (-) TimerEvent: {}
+[0.227128] (ecan_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.234855] (ecan_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.235280] (ecan_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.236229] (ecan_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.239396] (ecan_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299364] (-) TimerEvent: {}
+[0.312229] (ecan_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.320860] (ecan_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.321212] (ecan_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.321734] (ecan_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.327144] (ecan_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399473] (-) TimerEvent: {}
+[0.499724] (-) TimerEvent: {}
+[0.599970] (-) TimerEvent: {}
+[0.700294] (-) TimerEvent: {}
+[0.755416] (ecan_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.800378] (-) TimerEvent: {}
+[0.878944] (ecan_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.900523] (-) TimerEvent: {}
+[0.930596] (ecan_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.935247] (ecan_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.944213] (ecan_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.963341] (ecan_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.985469] (ecan_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.000636] (-) TimerEvent: {}
+[1.032627] (ecan_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.034759] (ecan_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.100747] (-) TimerEvent: {}
+[1.118917] (ecan_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.145114] (ecan_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.181463] (ecan_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.188918] (ecan_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.200888] (-) TimerEvent: {}
+[1.254148] (ecan_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.254621] (ecan_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301014] (-) TimerEvent: {}
+[1.321276] (ecan_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.322322] (ecan_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.376273] (ecan_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.401086] (-) TimerEvent: {}
+[1.410329] (ecan_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.493858] (ecan_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.494110] (ecan_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.494229] (ecan_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.495465] (ecan_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.497609] (ecan_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.498917] (ecan_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.501149] (-) TimerEvent: {}
+[1.506244] (ecan_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.506458] (ecan_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.507714] (ecan_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.508894] (ecan_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.521047] (ecan_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[1.526542] (ecan_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver\n'}
+[1.535127] (ecan_driver) CommandEnded: {'returncode': 0}
+[1.535730] (ecan_driver) JobProgress: {'identifier': 'ecan_driver', 'progress': 'build'}
+[1.537325] (ecan_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver', '--', '-j8', '-l8'], 'cwd': '/home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hyunchangkang'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hyunchangkang'), ('OLDPWD', '/home/hyunchangkang/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1421'), ('SYSTEMD_EXEC_PID', '1851'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2659'), ('COLCON_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hyunchangkang'), ('JOURNAL_STREAM', '8:10956'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hyunchangkang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hyunchangkang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nuc10i5fnh:@/tmp/.ICE-unix/1661,unix/nuc10i5fnh:/tmp/.ICE-unix/1661'), ('INVOCATION_ID', '6c790692238d420d899a3f0b83509bc7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:5370b491-fb36-4297-ba35-d135fad85712'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver:/opt/ros/humble')]), 'shell': False}
+[1.584629] (ecan_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ProximitySensor_pub.dir/src/ProximitySensor_pub.cpp.o\x1b[0m\n'}
+[1.584823] (ecan_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/EthernetCommunication.dir/src/EthernetCommunication.cpp.o\x1b[0m\n'}
+[1.601256] (-) TimerEvent: {}
+[1.701560] (-) TimerEvent: {}
+[1.801865] (-) TimerEvent: {}
+[1.902219] (-) TimerEvent: {}
+[2.002545] (-) TimerEvent: {}
+[2.102940] (-) TimerEvent: {}
+[2.203245] (-) TimerEvent: {}
+[2.303555] (-) TimerEvent: {}
+[2.403881] (-) TimerEvent: {}
+[2.504184] (-) TimerEvent: {}
+[2.604506] (-) TimerEvent: {}
+[2.704837] (-) TimerEvent: {}
+[2.805099] (-) TimerEvent: {}
+[2.905403] (-) TimerEvent: {}
+[3.005720] (-) TimerEvent: {}
+[3.106029] (-) TimerEvent: {}
+[3.206351] (-) TimerEvent: {}
+[3.306647] (-) TimerEvent: {}
+[3.406937] (-) TimerEvent: {}
+[3.507242] (-) TimerEvent: {}
+[3.607542] (-) TimerEvent: {}
+[3.707830] (-) TimerEvent: {}
+[3.808182] (-) TimerEvent: {}
+[3.908480] (-) TimerEvent: {}
+[4.008775] (-) TimerEvent: {}
+[4.109099] (-) TimerEvent: {}
+[4.209407] (-) TimerEvent: {}
+[4.309704] (-) TimerEvent: {}
+[4.410033] (-) TimerEvent: {}
+[4.510329] (-) TimerEvent: {}
+[4.610650] (-) TimerEvent: {}
+[4.710945] (-) TimerEvent: {}
+[4.811259] (-) TimerEvent: {}
+[4.911573] (-) TimerEvent: {}
+[5.011878] (-) TimerEvent: {}
+[5.112185] (-) TimerEvent: {}
+[5.212498] (-) TimerEvent: {}
+[5.312795] (-) TimerEvent: {}
+[5.413091] (-) TimerEvent: {}
+[5.513394] (-) TimerEvent: {}
+[5.613682] (-) TimerEvent: {}
+[5.713970] (-) TimerEvent: {}
+[5.814283] (-) TimerEvent: {}
+[5.914578] (-) TimerEvent: {}
+[6.014994] (-) TimerEvent: {}
+[6.115470] (-) TimerEvent: {}
+[6.215789] (-) TimerEvent: {}
+[6.248850] (ecan_driver) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable EthernetCommunication\x1b[0m\n'}
+[6.315895] (-) TimerEvent: {}
+[6.416239] (-) TimerEvent: {}
+[6.453077] (ecan_driver) StdoutLine: {'line': b'[ 75%] Built target EthernetCommunication\n'}
+[6.516341] (-) TimerEvent: {}
+[6.616636] (-) TimerEvent: {}
+[6.716945] (-) TimerEvent: {}
+[6.817279] (-) TimerEvent: {}
+[6.917594] (-) TimerEvent: {}
+[7.017925] (-) TimerEvent: {}
+[7.118365] (-) TimerEvent: {}
+[7.218709] (-) TimerEvent: {}
+[7.319118] (-) TimerEvent: {}
+[7.419587] (-) TimerEvent: {}
+[7.519915] (-) TimerEvent: {}
+[7.620221] (-) TimerEvent: {}
+[7.720526] (-) TimerEvent: {}
+[7.820870] (-) TimerEvent: {}
+[7.921173] (-) TimerEvent: {}
+[8.021458] (-) TimerEvent: {}
+[8.121792] (-) TimerEvent: {}
+[8.222084] (-) TimerEvent: {}
+[8.322375] (-) TimerEvent: {}
+[8.422715] (-) TimerEvent: {}
+[8.523009] (-) TimerEvent: {}
+[8.623318] (-) TimerEvent: {}
+[8.723610] (-) TimerEvent: {}
+[8.823904] (-) TimerEvent: {}
+[8.924122] (-) TimerEvent: {}
+[9.024456] (-) TimerEvent: {}
+[9.124748] (-) TimerEvent: {}
+[9.225090] (-) TimerEvent: {}
+[9.325382] (-) TimerEvent: {}
+[9.425677] (-) TimerEvent: {}
+[9.526009] (-) TimerEvent: {}
+[9.626310] (-) TimerEvent: {}
+[9.726607] (-) TimerEvent: {}
+[9.826911] (-) TimerEvent: {}
+[9.927136] (-) TimerEvent: {}
+[10.027430] (-) TimerEvent: {}
+[10.127780] (-) TimerEvent: {}
+[10.228090] (-) TimerEvent: {}
+[10.328394] (-) TimerEvent: {}
+[10.426813] (ecan_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ProximitySensor_pub\x1b[0m\n'}
+[10.428489] (-) TimerEvent: {}
+[10.532123] (-) TimerEvent: {}
+[10.632509] (-) TimerEvent: {}
+[10.732892] (-) TimerEvent: {}
+[10.833192] (-) TimerEvent: {}
+[10.894904] (ecan_driver) StdoutLine: {'line': b'[100%] Built target ProximitySensor_pub\n'}
+[10.907240] (ecan_driver) CommandEnded: {'returncode': 0}
+[10.907822] (ecan_driver) JobProgress: {'identifier': 'ecan_driver', 'progress': 'install'}
+[10.915629] (ecan_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver'], 'cwd': '/home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hyunchangkang'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hyunchangkang'), ('OLDPWD', '/home/hyunchangkang/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1421'), ('SYSTEMD_EXEC_PID', '1851'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2659'), ('COLCON_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hyunchangkang'), ('JOURNAL_STREAM', '8:10956'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hyunchangkang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hyunchangkang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nuc10i5fnh:@/tmp/.ICE-unix/1661,unix/nuc10i5fnh:/tmp/.ICE-unix/1661'), ('INVOCATION_ID', '6c790692238d420d899a3f0b83509bc7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:5370b491-fb36-4297-ba35-d135fad85712'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hyunchangkang/ros2_ws/src/ecan_driver/build/ecan_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hyunchangkang/ros2_ws/install/ecan_driver:/opt/ros/humble')]), 'shell': False}
+[10.922243] (ecan_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.922535] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/lib/ecan_driver/EthernetCommunication\n'}
+[10.923330] (ecan_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/lib/ecan_driver/EthernetCommunication" to ""\n'}
+[10.923494] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/lib/ecan_driver/ProximitySensor_pub\n'}
+[10.925872] (ecan_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/lib/ecan_driver/ProximitySensor_pub" to ""\n'}
+[10.926054] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/launch\n'}
+[10.926173] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/launch/proximity_sensor.launch.py\n'}
+[10.926338] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/config\n'}
+[10.926451] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/config/config.yaml\n'}
+[10.926588] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ament_index/resource_index/package_run_dependencies/ecan_driver\n'}
+[10.926733] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ament_index/resource_index/parent_prefix_path/ecan_driver\n'}
+[10.926940] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/environment/ament_prefix_path.sh\n'}
+[10.927119] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/environment/ament_prefix_path.dsv\n'}
+[10.927265] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/environment/path.sh\n'}
+[10.927455] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/environment/path.dsv\n'}
+[10.927590] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/local_setup.bash\n'}
+[10.927751] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/local_setup.sh\n'}
+[10.927895] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/local_setup.zsh\n'}
+[10.928099] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/local_setup.dsv\n'}
+[10.928246] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/package.dsv\n'}
+[10.928454] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ament_index/resource_index/packages/ecan_driver\n'}
+[10.928611] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/cmake/ecan_driverConfig.cmake\n'}
+[10.928741] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/cmake/ecan_driverConfig-version.cmake\n'}
+[10.928891] (ecan_driver) StdoutLine: {'line': b'-- Installing: /home/hyunchangkang/ros2_ws/src/ecan_driver/install/ecan_driver/share/ecan_driver/package.xml\n'}
+[10.930788] (ecan_driver) CommandEnded: {'returncode': 0}
+[10.933393] (-) TimerEvent: {}
+[10.947212] (ecan_driver) JobEnded: {'identifier': 'ecan_driver', 'rc': 0}
+[10.947661] (-) EventReactorShutdown: {}

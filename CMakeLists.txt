@@ -9,31 +9,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
-# Disable Python interface generation
-set(rosidl_generate_interfaces_SKIP_PYTHON_INSTALL TRUE)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/CanFrame.msg"
-  DEPENDENCIES std_msgs
-  ADD_LINTER_TESTS
-)
-
-add_executable(ethernet_node src/ethernet_communication.cpp)
-ament_target_dependencies(ethernet_node rclcpp std_msgs)
-
-
-rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
-target_link_libraries(ethernet_node "${cpp_typesupport_target}")
-
+add_executable(ethernet_node src/EthernetCommunication.cpp)
+ament_target_dependencies(ethernet_node rclcpp std_msgs sensor_msgs)
 
 add_executable(processing_node src/ProximitySensor_pub.cpp)
-ament_target_dependencies(processing_node rclcpp std_msgs)
-
-
-target_link_libraries(processing_node "${cpp_typesupport_target}")
-
+ament_target_dependencies(processing_node rclcpp std_msgs sensor_msgs)
 
 install(TARGETS
   ethernet_node
